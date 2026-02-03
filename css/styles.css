@@ -1,0 +1,149 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 100;
+}
+.header-bar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* le nav aussi, et en flex */
+.menu-sections {
+    width: 100%;                    /* IMPORTANT */
+    display: flex;
+    justify-content: space-between; /* gauche <----> droite */
+    align-items: center;
+    padding: 16px 30px;
+    background-color: #1b4c9c;
+    box-sizing: border-box;         /* IMPORTANT */
+}
+
+.left-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+.right-links a {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.right-links {
+    display: flex;
+    gap: 40px; /* augmente l’espace entre les liens */
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav .menu li a:hover {
+    border-bottom: 4px solid #333;
+}
+
+
+
+nav, header, section, footer{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;  
+
+}
+
+footer{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #1b4c9c;
+    padding: 0.5rem 0; 
+}
+
+footer a {
+color: white;
+text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /*a ajuster selon le design*/
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Conteneur de référence */
+.portfolio-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* image de fond */
+.portfolio-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* base commune aux crevettes */
+.crevette {
+    position: absolute;
+    width: 18vw;
+    max-width: 350px;
+    min-width: 180px;
+    cursor: pointer;
+}
+
+/* crevette portfolio */
+.crevette-portfolio {
+    top: 24%;
+    left: 65%;
+}
+
+/* crevette CV */
+.crevette-cv {
+    top: 42%;
+    left: 73%;
+}
